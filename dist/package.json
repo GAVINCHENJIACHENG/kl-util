@@ -1,0 +1,28 @@
+{
+  "name": "kl-util",
+  "version": "0.0.14",
+  "description": "util",
+  "main": "./src/index.js",
+  "bin": "./src/index.js",
+  "scripts": {
+    "test": ".idea/node_modules"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.huangaigou.com/kinglove/kl-util"
+  },
+  "keywords": [
+    "webpack",
+    "kl",
+    "vue",
+    "structure",
+    "util"
+  ],
+  "author": "gavin_cjc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://git.huangaigou.com/kinglove/kl-util"
+  },
+  "homepage": "https://git.huangaigou.com/kinglove/kl-util",
+  "_from": "kl-util@0.0.14"
+}
