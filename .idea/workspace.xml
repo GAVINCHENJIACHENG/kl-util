@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="12b1de44-edbe-4f80-b323-ebfd56c83b5c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/structure/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/structure/README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="23rnDKaNCvj3ktH68x5EdgYJPFa" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.last.introduce.type" value="VAR" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/api" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="D:\project\kl-util\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\project\kl-util\src" />
+      <recent name="D:\project\kl-util\src\structure\Utils" />
+      <recent name="D:\project\kl-util\src\structure\Stack" />
+      <recent name="D:\project\kl-util\src\structure\Queue" />
+      <recent name="D:\project\kl-util\src\structure\LinkedList" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\kl-util\src\api" />
+      <recent name="D:\project\kl-util\src\structure" />
+      <recent name="D:\project\kl-util\src\structure\DoublyLinkedList" />
+      <recent name="D:\project\kl-util\src\structure\LinkedList" />
+      <recent name="D:\project\kl-util\src\structure\Queue" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="12b1de44-edbe-4f80-b323-ebfd56c83b5c" name="Default Changelist" comment="" />
+      <created>1642500952954</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1642500952954</updated>
+      <workItem from="1642500954068" duration="938000" />
+      <workItem from="1642562305596" duration="17960000" />
+      <workItem from="1642643607659" duration="25982000" />
+      <workItem from="1642730338636" duration="18237000" />
+      <workItem from="1642840869350" duration="533000" />
+      <workItem from="1642990386019" duration="24534000" />
+      <workItem from="1643077914877" duration="6203000" />
+      <workItem from="1643162571426" duration="21845000" />
+      <workItem from="1643251642885" duration="21231000" />
+      <workItem from="1643334980256" duration="8747000" />
+      <workItem from="1644286614771" duration="19705000" />
+      <workItem from="1644372034926" duration="25022000" />
+      <workItem from="1644458384558" duration="17424000" />
+    </task>
+    <task id="LOCAL-00001" summary="gavin-1.0.0.20220102-新增队列">
+      <created>1642670895901</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1642670895901</updated>
+    </task>
+    <task id="LOCAL-00002" summary="gavin-1.0.0.20220102-新增队列">
+      <created>1642672864659</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1642672864659</updated>
+    </task>
+    <task id="LOCAL-00003" summary="gavin-1.0.0.20220102-新增队列">
+      <created>1642672976948</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1642672976948</updated>
+    </task>
+    <task id="LOCAL-00004" summary="gavin-1.0.0.20220102-新增队列">
+      <created>1642673516246</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1642673516246</updated>
+    </task>
+    <task id="LOCAL-00005" summary="gavin-1.0.0.20220102-新增队列">
+      <created>1642674884545</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1642674884545</updated>
+    </task>
+    <task id="LOCAL-00006" summary="gavin-1.0.0.20220121-新增链表">
+      <created>1642756953653</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1642756953653</updated>
+    </task>
+    <task id="LOCAL-00007" summary="gavin-1.0.0.20220121-新增链表">
+      <created>1642758530256</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1642758530256</updated>
+    </task>
+    <task id="LOCAL-00008" summary="gavin-1.0.0.20220121-新增链表">
+      <created>1642758609662</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1642758609662</updated>
+    </task>
+    <task id="LOCAL-00009" summary="gavin-1.0.0.20220125-新增链表">
+      <created>1643078799307</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1643078799307</updated>
+    </task>
+    <task id="LOCAL-00010" summary="gavin-1.0.0.20220125-新增双向链表">
+      <created>1643079196411</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1643079196411</updated>
+    </task>
+    <task id="LOCAL-00011" summary="gavin-1.0.0.20220125-新增双向链表">
+      <created>1643079893715</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1643079893715</updated>
+    </task>
+    <task id="LOCAL-00012" summary="gavin-1.0.0.20220208">
+      <created>1644311246260</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1644311246260</updated>
+    </task>
+    <task id="LOCAL-00013" summary="gavin-1.0.0.20220208">
+      <created>1644311361843</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1644311361843</updated>
+    </task>
+    <task id="LOCAL-00014" summary="gavin-1.0.0.20220208">
+      <created>1644312873347</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1644312873347</updated>
+    </task>
+    <task id="LOCAL-00015" summary="gavin-1.0.0.20220210">
+      <created>1644461237955</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1644461237955</updated>
+    </task>
+    <task id="LOCAL-00016" summary="gavin-1.0.0.20220210">
+      <created>1644482139098</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1644482139098</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="gavin-1.0.0.20220102-新增队列" />
+    <MESSAGE value="gavin-1.0.0.20220121-新增链表" />
+    <MESSAGE value="gavin-1.0.0.20220125-新增链表" />
+    <MESSAGE value="gavin-1.0.0.20220125-新增双向链表" />
+    <MESSAGE value="gavin-1.0.0.20220208" />
+    <MESSAGE value="gavin-1.0.0.20220210" />
+    <option name="LAST_COMMIT_MESSAGE" value="gavin-1.0.0.20220210" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="791" y="86" key="CommitChangelistDialog2" timestamp="1644483694894">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="791" y="86" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1644483694894" />
+    <state x="627" y="259" key="Vcs.Push.Dialog.v2" timestamp="1644482140793">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="627" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1644482140793" />
+    <state x="181" y="276" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1644464757950">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="181" y="276" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1644464757950" />
+    <state x="106" y="204" width="1477" height="731" key="dock-window-1" timestamp="1644483536576">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="106" y="204" width="1477" height="731" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1644483536576" />
+    <state x="0" y="2" width="639" height="726" key="dock-window-2" timestamp="1644458403694">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="0" y="2" width="639" height="726" key="dock-window-2/0.0.1920.1040@0.0.1920.1040" timestamp="1644458403694" />
+    <state x="1238" y="294" key="refactoring.ChangeSignatureDialog" timestamp="1644478888603">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1238" y="294" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1644478888603" />
+    <state x="1400" y="392" key="run.anything.popup" timestamp="1644387483763">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1400" y="392" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1644387483763" />
+    <state x="974" y="311" width="672" height="678" key="search.everywhere.popup" timestamp="1644391296528">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="974" y="311" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1644391296528" />
+  </component>
+</project>
