@@ -214,9 +214,6 @@ const object = {
 
 // 可以通过如下写法获取province属性
 api.getProperty(object, 'userInfo.address.province')
-
-// 可选链操作符形式
-console.log(object?.userInfo?.address?.province)
 ````
 
 ----------
