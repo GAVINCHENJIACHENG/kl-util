@@ -7,9 +7,9 @@
 
 |  对象   |  说明   |
 |  ----  | ---- |
-|  [Api](https://git.huangaigou.com/kinglove/kl-util/src/master/src/api)  | 常用文档 |
-|  [Stack](https://git.huangaigou.com/kinglove/kl-util/src/master/src/structure/Stack)  | 栈 |
-|  [Queue](https://git.huangaigou.com/kinglove/kl-util/src/master/src/structure/Queue)  | 队列 |
-|  [LinkedList](https://git.huangaigou.com/kinglove/kl-util/src/master/src/structure/LinkedList)  | 链表 |
-|  [DoublyLinkedList](https://git.huangaigou.com/kinglove/kl-util/src/master/src/structure/DoublyLinkedList)  | 双向链表 |
-|  [Utils](https://git.huangaigou.com/kinglove/kl-util/src/master/src/Utils)  | 工具 |
+|  [Api](https://github.com/GAVINCHENJIACHENG/kl-util/tree/master/src/api)  | 常用文档 |
+|  [Stack](https://github.com/GAVINCHENJIACHENG/kl-util/tree/master/src/structure/Stack)  | 栈 |
+|  [Queue](https://github.com/GAVINCHENJIACHENG/kl-util/tree/master/src/structure/Queue)  | 队列 |
+|  [LinkedList](https://github.com/GAVINCHENJIACHENG/kl-util/tree/master/src/structure/LinkedList)  | 链表 |
+|  [DoublyLinkedList](https://github.com/GAVINCHENJIACHENG/kl-util/tree/master/src/structure/DoublyLinkedList)  | 双向链表 |
+|  [Utils](https://github.com/GAVINCHENJIACHENG/kl-util/tree/master/src/Utils)  | 工具 |
