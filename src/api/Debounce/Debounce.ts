@@ -1,4 +1,4 @@
-var time: any;
+var timeDebounce: any;
 
 /**
  * 防抖
@@ -6,12 +6,12 @@ var time: any;
  * @param wait
  */
 module.exports = function Debounce ( func: Function, wait: number ) {
-    if(time){
-        clearTimeout(time)
+    if(timeDebounce){
+        clearTimeout(timeDebounce)
     }
     return function (...args: any) {
         let _this: any = this;
-        time = setTimeout(function() {
+        timeDebounce = setTimeout(function() {
             func.apply(_this, args);
         }, wait)
     }

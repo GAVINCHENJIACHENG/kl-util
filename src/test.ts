@@ -99,14 +99,14 @@ import {Stack,Utils,Queue,LinkedList,DoublyLinkedList,Api} from "./index";
 // console.log(util.baseConverter(100));
 
 var api = new Api();
-// api.throttle(()=>{
-//     console.log(111)
-// },2000)();
-// setTimeout(()=>{
-//     api.throttle(()=>{
-//         console.log(222)
-//     },2100)();
-// },2100)
+api.throttle(()=>{
+    console.log(111)
+},2000)();
+setTimeout(()=>{
+    api.throttle(()=>{
+        console.log(222)
+    },2100)();
+},2100)
 //
 // api.throttle(()=>{
 //     console.log(333)
@@ -114,7 +114,7 @@ var api = new Api();
 // api.throttle(()=>{
 //     console.log(444)
 // },2000)();
-
+//
 // api.debounce((e:any)=>{
 //     console.log(e)
 // },0)(111);
@@ -379,46 +379,46 @@ var api = new Api();
 // console.log(api.isCode("123456", 4));    // false
 // console.log(api.isCode("1234567", 6));   // false
 // console.log(api.isCode("12345a", 6));   // false
-
+//
 // console.log(api.isArray([]));   // true
 // console.log(api.isArray([1,2,3]));  // true
 // console.log(api.isArray("[1,2,3]"));    //false
 // console.log(api.isArray({}));   //false
-
+//
 // console.log(api.isJsonString({}));      // false
 // console.log(api.isJsonString({"name": "gavin"}));   //false
 // console.log(api.isJsonString({"name": "gavin"}));   //false
 // console.log(api.isJsonString("{'name': 'gavin'}"));   //false
 // console.log(api.isJsonString("{name: 'gavin'}"));   //false
 // console.log(api.isJsonString('{"name": "gavin"}'));   //true
-
+//
 // console.log(api.isJson('{"name": "gavin"}'));   //false
 // console.log(api.isJsonString({name: "gavin"}));   //false
 // console.log(api.isJson({"name": "gavin"}));   //true
-
+//
 // console.log(api.isObject("123"));   //false
 // console.log(api.isObject([]));      //false
 // console.log(api.isObject(new RegExp('')));  //false
 // console.log(api.isObject(new Object()));    //true
 // console.log(api.isObject({}));      //true
-
-
+//
+//
 // console.log(api.isEmail("gavin@163.com"));  //true
 // console.log(api.isEmail("gavin@qq.com"));  //true
 // console.log(api.isEmail("gavin@253.com"));  //true
 // console.log(api.isEmail("gavin.com"));  //false
-
+//
 // console.log(api.isPhone("1370000000"));     //false
 // console.log(api.isPhone("10000000000"));    //false
 // console.log(api.isPhone("13700000000"));    //true
 // console.log(api.isPhone(13727224048));      //true
-
+//
 // console.log(api.isUrl("www.baidu.com"));    //false
 // console.log(api.isUrl("baidu.com"));    //false
 // console.log(api.isUrl("http://www.baidu.com"));    //true
 // console.log(api.isUrl("https://www.baidu.com"));    //true
 // console.log(api.isUrl("https://baidu.com"));    //true
-
+//
 // console.log(api.isEmpty(""));    //true
 // console.log(api.isEmpty({}));    //true
 // console.log(api.isEmpty([]));    //true
@@ -428,7 +428,7 @@ var api = new Api();
 // console.log(api.isEmpty(123));    //false
 // console.log(api.isEmpty({name: "gavin"}));    //false
 // console.log(api.isEmpty([1,2,3]));    //false
-
+//
 // console.log(api.isDate("2022-02-10"));    //true
 // console.log(api.isDate("2022-02-10 08:32:10"));    //true
 // console.log(api.isDate("2022/02/10 3:10"));    //true
@@ -438,7 +438,7 @@ var api = new Api();
 // console.log(api.isDate(1644393909689));    //true
 // console.log(api.isDate("2022年02月10日"));    //false
 // console.log(api.isDate("2022-02-10 25:32"));    //false
-
+//
 // console.log(api.isNumber("abc"));   //false
 // console.log(api.isNumber([]));   //false
 // console.log(api.isNumber({}));   //false
@@ -449,28 +449,28 @@ var api = new Api();
 // console.log(api.isNumber("2359.08"));   //true
 // console.log(api.isNumber("1000"));   //true
 // console.log(api.isNumber(-1000));   //true
-
+//
 // console.log(api.isIdCard("441283199910310775"));    //true
-
+//
 // console.log(api.isCarNo("粤A57034"));    //true
 // console.log(api.isCarNo("粤57034"));     //false
-
+//
 // console.log(api.isAmount("3,233.08"));    //true
 // console.log(api.isAmount("233.08"));    //true
 // console.log(api.isAmount(233.08));   //true
 // console.log(api.isAmount("-3,233.08"));     //false
 // console.log(api.isAmount("$3,233.08"));     //false
 // console.log(api.isAmount("￥3,233.08"));     //false
-
+//
 // console.log(api.isChinese("中国人不骗中国人"));    //true
 // console.log(api.isChinese("中国人不骗中国人1"));    //false
-
+//
 // console.log(api.isLetter("123"));     //false
 // console.log(api.isLetter("abc1"));     //false
 // console.log(api.isLetter("ABC1"));     //false
 // console.log(api.isLetter("abc"));    //true
 // console.log(api.isLetter("ABC"));    //true
-
+//
 // console.log(api.isEnOrNum("123abc"));     //false
 // console.log(api.isEnOrNum("~)"));     //false
 // console.log(api.isEnOrNum("123)"));     //false
@@ -478,14 +478,6 @@ var api = new Api();
 // console.log(api.isEnOrNum("abc"));    //true
 // console.log(api.isEnOrNum(123));    //true
 // console.log(api.isEnOrNum("123"));    //true
-
-// console.log(api.isAndOrNum("abc123"));     //false
-// console.log(api.isAndOrNum("~)"));     //false
-// console.log(api.isAndOrNum("123)"));     //false
-// console.log(api.isAndOrNum("abc)"));     //false
-// console.log(api.isAndOrNum("abc"));    //true
-// console.log(api.isAndOrNum(123));    //true
-// console.log(api.isAndOrNum("123"));    //true
 
 //案例1
 // let str = "123"
@@ -562,3 +554,5 @@ var api = new Api();
 // console.log(api.isRegExp(/~/));    //true
 // console.log(api.isRegExp(new RegExp("")));    //true
 // console.log(api.isRegExp("//"));     //false;
+
+

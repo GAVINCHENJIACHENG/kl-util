@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="12b1de44-edbe-4f80-b323-ebfd56c83b5c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/dist/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/Debounce/Debounce.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/Debounce/Debounce.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +91,8 @@
       <workItem from="1644286614771" duration="19705000" />
       <workItem from="1644372034926" duration="25022000" />
       <workItem from="1644458384558" duration="17424000" />
+      <workItem from="1644546150414" duration="2271000" />
+      <workItem from="1644560355087" duration="12969000" />
     </task>
     <task id="LOCAL-00001" summary="gavin-1.0.0.20220102-新增队列">
       <created>1642670895901</created>
@@ -216,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644484578592</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="gavin-1.0.0.20220210">
+      <created>1644487928715</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1644487928715</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,22 +243,26 @@
     <option name="LAST_COMMIT_MESSAGE" value="gavin-1.0.0.20220210" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="791" y="86" key="CommitChangelistDialog2" timestamp="1644484575836">
+    <state x="0" y="363" key="#Inspections" timestamp="1644567826065">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="791" y="86" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1644484575836" />
-    <state x="627" y="259" key="Vcs.Push.Dialog.v2" timestamp="1644484580066">
+    <state x="0" y="363" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1644567826065" />
+    <state x="791" y="86" key="CommitChangelistDialog2" timestamp="1644487926458">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="627" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1644484580066" />
-    <state x="181" y="276" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1644464757950">
+    <state x="791" y="86" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1644487926458" />
+    <state x="627" y="259" key="Vcs.Push.Dialog.v2" timestamp="1644487930331">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="181" y="276" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1644464757950" />
-    <state x="106" y="204" width="1477" height="731" key="dock-window-1" timestamp="1644487909140">
+    <state x="627" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1644487930331" />
+    <state x="181" y="276" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1644562465530">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="106" y="204" width="1477" height="731" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1644487909140" />
+    <state x="181" y="276" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1644562465530" />
+    <state x="358" y="178" width="1477" height="731" key="dock-window-1" timestamp="1644560375267">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="358" y="178" width="1477" height="731" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1644560375267" />
     <state x="0" y="2" width="639" height="726" key="dock-window-2" timestamp="1644458403694">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
