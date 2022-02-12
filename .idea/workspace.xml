@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="12b1de44-edbe-4f80-b323-ebfd56c83b5c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Model/Model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/Debounce/Debounce.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/Debounce/Debounce.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/DeepClone/DeepClone.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/DeepClone/DeepClone.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/DeepMerge/DeepMerge.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/DeepMerge/DeepMerge.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/Throttle/Throttle.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/Throttle/Throttle.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,19 +43,32 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="VAR" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/api" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/model" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="D:\project\kl-util\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="D:\kl\其他项目\kl-util\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\kl\其他项目\kl-util\src\model" />
+      <recent name="D:\project\kl-util\src\api" />
+      <recent name="D:\project\kl-util\src\structure" />
+      <recent name="D:\project\kl-util\src\structure\DoublyLinkedList" />
+      <recent name="D:\project\kl-util\src\structure\LinkedList" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\project\kl-util\src" />
       <recent name="D:\project\kl-util\src\structure\Utils" />
@@ -48,25 +76,6 @@
       <recent name="D:\project\kl-util\src\structure\Queue" />
       <recent name="D:\project\kl-util\src\structure\LinkedList" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\project\kl-util\src\api" />
-      <recent name="D:\project\kl-util\src\structure" />
-      <recent name="D:\project\kl-util\src\structure\DoublyLinkedList" />
-      <recent name="D:\project\kl-util\src\structure\LinkedList" />
-      <recent name="D:\project\kl-util\src\structure\Queue" />
-    </key>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -93,6 +102,8 @@
       <workItem from="1644458384558" duration="17424000" />
       <workItem from="1644546150414" duration="2271000" />
       <workItem from="1644560355087" duration="12969000" />
+      <workItem from="1644591745177" duration="2730000" />
+      <workItem from="1644623873561" duration="6069000" />
     </task>
     <task id="LOCAL-00001" summary="gavin-1.0.0.20220102-新增队列">
       <created>1642670895901</created>
@@ -231,7 +242,18 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="gavin-1.0.0.20220102-新增队列" />
@@ -255,10 +277,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="627" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1644487930331" />
-    <state x="181" y="276" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1644562465530">
+    <state x="181" y="260" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1644626639674">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="181" y="276" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1644562465530" />
+    <state x="181" y="260" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1644626639674" />
     <state x="358" y="178" width="1477" height="731" key="dock-window-1" timestamp="1644560375267">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -267,10 +289,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="0" y="2" width="639" height="726" key="dock-window-2/0.0.1920.1040@0.0.1920.1040" timestamp="1644458403694" />
-    <state x="1238" y="294" key="refactoring.ChangeSignatureDialog" timestamp="1644478888603">
+    <state x="1238" y="294" key="refactoring.ChangeSignatureDialog" timestamp="1644625877702">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1238" y="294" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1644478888603" />
+    <state x="1238" y="294" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1644625877702" />
     <state x="1400" y="392" key="run.anything.popup" timestamp="1644387483763">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

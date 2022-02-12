@@ -5,14 +5,17 @@ var timeDebounce: any;
  * @param func
  * @param wait
  */
-module.exports = function Debounce ( func: Function, wait: number ) {
-    if(timeDebounce){
-        clearTimeout(timeDebounce)
+module.exports = function Debounce () {
+    Debounce.prototype.debounce = function ( func: Function, wait: number ){
+        if(timeDebounce){
+            clearTimeout(timeDebounce)
+        }
+        return function (...args: any) {
+            let _this: any = this;
+            timeDebounce = setTimeout(function() {
+                func.apply(_this, args);
+            }, wait)
+        }
     }
-    return function (...args: any) {
-        let _this: any = this;
-        timeDebounce = setTimeout(function() {
-            func.apply(_this, args);
-        }, wait)
-    }
+
 }

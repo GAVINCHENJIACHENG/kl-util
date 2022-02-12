@@ -4,7 +4,8 @@ module.exports = {
     LinkedList: require("./structure/LinkedList/LinkedList"),
     DoublyLinkedList: require("./structure/DoublyLinkedList/DoublyLinkedList"),
     Api: require("./api/index"),
-    Utils: require("./Utils/Utils")
+    Utils: require("./Utils/Utils"),
+    Model: require("./Model/Model")
 }
 
 
