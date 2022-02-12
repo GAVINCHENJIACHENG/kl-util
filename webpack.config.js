@@ -37,6 +37,10 @@ module.exports = {
                 use: [MiniCssExtractPlugin.loader,"css-loader"]
             },
             {
+                test: /.txt/,
+                type: "asset/source"
+            },
+            {
                 test: /.js/,
                 exclude: /node_modules/,
                 use: {

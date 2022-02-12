@@ -22,6 +22,11 @@
 |  [objToParams](#Api.objToParams)  | String | 对象转url参数 | v1.0.0 |
 |  [md5](#Api.md5)  | String | md5加密 | v1.0.0 |
 |  [trim](#Api.trim)  | String | 去除空格 | v1.0.0 |
+|  [isSensitive](#Api.isSensitive)  | Boolean | 敏感词检测 | v1.1.0 |
+|  [sensitiveSearch](#Api.sensitiveSearch)  | Array | 敏感词搜索 | v1.1.0 |
+|  [sensitiveReplace](#Api.sensitiveReplace)  | String | 敏感词替换* | v1.1.0 |
+|  [sensitiveFilter](#Api.sensitiveFilter)  | Boolean | 忽略敏感词 | v1.1.0 |
+|  [sensitiveAdd](#Api.sensitiveAdd)  | Boolean | 新增敏感词 | v1.1.0 |
 
 #### 校验方法
 |  方法  | 返回值   | 说明   | 兼容版本  |
@@ -478,6 +483,148 @@ console.log(api.trim(" a b c", "right"));
 
 // 返回结果 "abc"
 console.log(api.trim(" a b c ", "all"));
+````
+
+----------
+
+<span id="Api.isSensitive"></span>
+> ##### Api.isSensitive(str)敏感词检测
+
+|  参数   |  说明   | 类型  | 必填  | 可选  |
+|  ----  | ---- | ----  | ----  | ----  |
+|  str  | 需要检测的字符串 | String  | true  |  -  |
+
+> ##### 示例：
+````javascript
+import { Api } from 'kl-util';
+//new Api对象
+var api = new Api();
+
+// 检测到 ”男装“ 广告敏感词，返回true
+console.log(api.isSensitive("这男装很便宜"));
+````
+
+----------
+
+<span id="Api.sensitiveSearch"></span>
+> ##### Api.sensitiveSearch(str)敏感词搜索
+
+|  参数   |  说明   | 类型  | 必填  | 可选  |
+|  ----  | ---- | ----  | ----  | ----  |
+|  str  | 需要检测的字符串 | String  | true  |  -  |
+
+> ##### 示例：
+````javascript
+import { Api } from 'kl-util';
+//new Api对象
+var api = new Api();
+
+// 返回 ['男装'] 广告敏感词
+console.log(api.sensitiveSearch("这男装很便宜"));
+````
+
+----------
+
+<span id="Api.sensitiveReplace"></span>
+> ##### Api.sensitiveReplace(str, filter)敏感词搜索
+
+|  参数   |  说明   | 类型  | 必填  | 可选  |
+|  ----  | ---- | ----  | ----  | ----  |
+|  str  | 需要检测的字符串 | String  | true  |  -  |
+|  filter  | 不替换以下敏感词 | Array  | false  |  -  |
+
+> ##### 示例：
+````javascript
+import { Api } from 'kl-util';
+//new Api对象
+var api = new Api();
+
+// 返回 "这**很便宜"
+console.log(api.sensitiveReplace("这男装很便宜"));
+
+
+// 返回 "这男装很便宜"
+console.log(api.sensitiveReplace("这男装很便宜", ["男装"]));
+````
+
+----------
+
+<span id="Api.sensitiveFilter"></span>
+> ##### Api.sensitiveFilter(key)忽略敏感词
+
+>> Object: 获取value添加
+
+>> String: 如果检测符含有“|”，既是切为另一个敏感词，比如（你好|我好|大家好）会切成3个敏感词
+
+|  参数   |  说明   | 类型  | 必填  | 可选  |
+|  ----  | ---- | ----  | ----  | ----  |
+|  key  | 敏感词对象，支持多种格式，比如：Array，Object，String，Number | Any  | true  |  -  |
+
+> ##### 示例：
+````javascript
+import { Api } from 'kl-util';
+//new Api对象
+var api = new Api();
+
+console.log(api.sensitiveAdd(["成功","中华民族伟"]));      // 返回 true
+
+console.log(api.sensitiveAdd({"阳光":"阳光","yyds": "yyds"}));      // 返回 true
+
+console.log(api.sensitiveAdd(1314));      // 返回 true
+
+console.log(api.sensitiveAdd("中国"));      // 返回 true
+
+console.log(api.sensitiveAdd("国家|不仅|利于"));      // 返回 true
+
+
+// 返回 ['开放', '成功', '中华民族伟', '阳光', 'yyds', '中国', '国家', '不仅', '利于']
+console.log(api.sensitiveSearch("成功举办北京冬奥会、冬残奥会，不仅可以增强我们实现中华民族伟大复兴的信心，而且有利于展示我们国家和民族致力于推动构建人类命运共同体，阳光、富强、开放的良好形象，增进各国人民对中国的了解和认识。yyds"));
+
+
+// 返回 **举办北京冬奥会、冬残奥会，**可以增强我们实现*****大复兴的信心，而且有**展示我们**和民族致力于推动构建人类命运共同体，**、富强、**的良好形象，增进各国人民对**的了解和认识。****
+console.log(api.sensitiveReplace("成功举办北京冬奥会、冬残奥会，不仅可以增强我们实现中华民族伟大复兴的信心，而且有利于展示我们国家和民族致力于推动构建人类命运共同体，阳光、富强、开放的良好形象，增进各国人民对中国的了解和认识。yyds"));
+
+````
+
+----------
+
+<span id="Api.sensitiveAdd"></span>
+> ##### Api.sensitiveAdd(key)新增敏感词
+
+>> Array|Number: 直接添加到数组后面
+
+>> Object: 获取value添加
+
+>> String: 如果检测符含有“|”，既是切为另一个敏感词，比如（你好|我好|大家好）会切成3个敏感词
+
+|  参数   |  说明   | 类型  | 必填  | 可选  |
+|  ----  | ---- | ----  | ----  | ----  |
+|  key  | 敏感词对象，支持多种格式，比如：Array，Object，String，Number | Any  | true  |  -  |
+
+> ##### 示例：
+````javascript
+import { Api } from 'kl-util';
+//new Api对象
+var api = new Api();
+
+console.log(api.sensitiveFilter(["成功","中华民族伟"]));     // 返回 true
+
+console.log(api.sensitiveFilter({"阳光":"阳光","yyds": "yyds"}));     // 返回 true
+
+console.log(api.sensitiveFilter(1314));     // 返回 true
+
+console.log(api.sensitiveFilter("中国"));     // 返回 true
+
+console.log(api.sensitiveFilter("国家|不仅|利于"));     // 返回 true
+
+
+// 返回 ['开放']
+console.log(api.sensitiveSearch("成功举办北京冬奥会、冬残奥会，不仅可以增强我们实现中华民族伟大复兴的信心，而且有利于展示我们国家和民族致力于推动构建人类命运共同体，阳光、富强、开放的良好形象，增进各国人民对中国的了解和认识。yyds"));
+
+
+// 成功举办北京冬奥会、冬残奥会，不仅可以增强我们实现中华民族伟大复兴的信心，而且有利于展示我们国家和民族致力于推动构建人类命运共同体，阳光、富强、**的良好形象，增进各国人民对中国的了解和认识。yyds
+console.log(api.sensitiveReplace("成功举办北京冬奥会、冬残奥会，不仅可以增强我们实现中华民族伟大复兴的信心，而且有利于展示我们国家和民族致力于推动构建人类命运共同体，阳光、富强、开放的良好形象，增进各国人民对中国的了解和认识。yyds"));
+
 ````
 
 ----------

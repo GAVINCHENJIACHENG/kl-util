@@ -12,6 +12,7 @@ var Params = require("./Params/Params");
 var MD5 = require("./MD5/MD5");
 var Trim = require("./Trim/Trim");
 var Test = require("./Test/Test");
+var Sensitive = require("./Sensitive/Sensitive");
 
 //引入设计模式
 var model = new Model();
@@ -142,5 +143,19 @@ module.exports = function Api() {
     Api.prototype.isRegExp = function (value: any): boolean{
         return singleton(Test,"Test").regExp(value);
     };
-
+    Api.prototype.isSensitive = function (str: string): boolean{
+        return singleton(Sensitive,"Sensitive").isSensitive(str);
+    };
+    Api.prototype.sensitiveSearch = function (str: string): Array<string>{
+        return singleton(Sensitive,"Sensitive").sensitiveSearch(str);
+    };
+    Api.prototype.sensitiveReplace = function (str: string,filter: Array<any>): string{
+        return singleton(Sensitive,"Sensitive").sensitiveReplace(str,filter);
+    };
+    Api.prototype.sensitiveFilter = function (key: (Array<any> | object | string | number | any)): boolean{
+        return singleton(Sensitive,"Sensitive").sensitiveFilter(key);
+    };
+    Api.prototype.sensitiveAdd = function (key: (Array<any> | object | string | number | any)): boolean{
+        return singleton(Sensitive,"Sensitive").sensitiveAdd(key);
+    };
 }

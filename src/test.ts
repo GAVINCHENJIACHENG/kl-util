@@ -99,279 +99,279 @@ import {Stack,Utils,Queue,LinkedList,DoublyLinkedList,Api} from "./index";
 // console.log(util.baseConverter(100));
 
 var api = new Api();
-api.throttle(()=>{
-    console.log(111)
-},2000)();
-setTimeout(()=>{
-    api.throttle(()=>{
-        console.log(222)
-    },2500)();
-},2500)
-api.throttle(()=>{
-    console.log(333)
-},2000)();
-api.throttle(()=>{
-    console.log(444)
-},2000)();
+// api.throttle(()=>{
+//     console.log(111)
+// },2000)();
+// setTimeout(()=>{
+//     api.throttle(()=>{
+//         console.log(222)
+//     },2500)();
+// },2500)
+// api.throttle(()=>{
+//     console.log(333)
+// },2000)();
+// api.throttle(()=>{
+//     console.log(444)
+// },2000)();
+// //
+// api.debounce((e:any)=>{
+//     console.log(e)
+// },0)(111);
+// api.debounce((e:any)=>{
+//     console.log(e)
+// },0)(222);
+// api.debounce((e:any)=>{
+//     console.log(e)
+// },0)(333);
 //
-api.debounce((e:any)=>{
-    console.log(e)
-},0)(111);
-api.debounce((e:any)=>{
-    console.log(e)
-},0)(222);
-api.debounce((e:any)=>{
-    console.log(e)
-},0)(333);
-
-
-
-
-let obj = {
-    "code": "success",
-    "message": "success",
-    "date": new Date(),
-    "reg": /.png/,
-    // @ts-ignore
-    "nulls": null,
-    // @ts-ignore
-    "undefined": undefined,
-    "Object": new Object(),
-    "JSON": {
-        "id": 12134,
-        "uid": 490537,
-        "username": "🌝",
-        "source_type": "luck_draw",
-        "source_id": 57206,
-        "prize_name": "22.22元现金奖励",
-        "prize_type": "cash",
-        "handle_status": "information_complete",
-        "create_time": "2022-01-24 10:02:28",
-        "update_time": "2022-01-24 10:02:28",
-        "cash_info": {
-            "id": 12134,
-            "account": "18027215212",
-            "name": "黄文俊",
-            "cent": 22000,
-            "create_time": "2022-01-25 17:23:59",
-            "update_time": "2022-01-25 17:24:00"
-        }
-    },
-    "function": function(){console.log("aaaaa")},
-    "data": [
-        {
-            "id": 12134,
-            "uid": 490537,
-            "username": "🌝",
-            "source_type": "luck_draw",
-            "source_id": 57206,
-            "prize_name": "22.22元现金奖励",
-            "prize_type": "cash",
-            "handle_status": "information_complete",
-            "create_time": "2022-01-24 10:02:28",
-            "update_time": "2022-01-24 10:02:28",
-            "cash_info": {
-                "id": 12134,
-                "account": "18027215212",
-                "name": "黄文俊",
-                "cent": 22000,
-                "create_time": "2022-01-25 17:23:59",
-                "update_time": "2022-01-25 17:24:00"
-            }
-        },
-        {
-            "id": 12133,
-            "uid": 490538,
-            "username": "烟火里的尘埃",
-            "source_type": "luck_draw",
-            "source_id": 57206,
-            "prize_name": "22.22元现金奖励",
-            "prize_type": "cash",
-            "handle_status": "information_complete",
-            "create_time": "2022-01-24 10:02:28",
-            "update_time": "2022-01-24 10:02:28"
-        }
-    ]
-}
-
-let objs = {
-    "code": "success",
-    "message": "success",
-    "date": new Date(),
-    "reg": /.png/,
-    // @ts-ignore
-    "nulls": null,
-    // @ts-ignore
-    "undefined": undefined,
-    "Object": new Object(),
-    "JSON": {
-        "id": 12134,
-        "uid": 490537,
-        "username": "🌝",
-        "source_type": "luck_draw",
-        "source_id": 57206,
-        "prize_name": "22.22元现金奖励",
-        "prize_type": "cash",
-        "handle_status": "information_complete",
-        "create_time": "2022-01-24 10:02:28",
-        "update_time": "2022-01-24 10:02:28",
-        "gavin": 1,
-        "cash_info": {
-            "gavin": 2,
-            "id": 12134,
-            "account": "18027215212",
-            "name": "黄文俊",
-            "cent": 22000,
-            "create_time": "2022-01-25 17:23:59",
-            "update_time": "2022-01-25 17:24:00"
-        }
-    },
-    "function": function(){console.log("aaaaa")},
-    "data": [
-        {
-            "id": 12134,
-            "uid": 490537,
-            "username": "🌝",
-            "source_type": "luck_draw",
-            "source_id": 57206,
-            "prize_name": "22.22元现金奖励",
-            "prize_type": "cash",
-            "handle_status": "information_complete",
-            "create_time": "2022-01-24 10:02:28",
-            "update_time": "2022-01-24 10:02:28",
-            "gavin": 1,
-
-
-            "cash_info": {
-                "gavin": 2,
-                "id": 12134,
-                "account": "18027215212",
-                "name": "黄文俊",
-                "cent": 22000,
-                "create_time": "2022-01-25 17:23:59",
-                "update_time": "2022-01-25 17:24:00",
-                "arr": [
-                    {
-                        name: "gavin",
-                        "arr": [
-                            {
-                                name: "gavin",
-                            },
-                            {
-                                name: "yami"
-                            }
-                        ],
-                    },
-                    {
-                        name: "yami",
-                        "arr": [
-                            {
-                                name: "gavin",
-                            },
-                            {
-                                name: "yami"
-                            }
-                        ],
-                    }
-                ],
-            },
-        },
-        {
-            "id": 12133,
-            "uid": 490538,
-            "username": "烟火里的尘埃",
-            "source_type": "luck_draw",
-            "source_id": 57206,
-            "prize_name": "22.22元现金奖励",
-            "prize_type": "cash",
-            "handle_status": "information_complete",
-            "create_time": "2022-01-24 10:02:28",
-            "update_time": "2022-01-24 10:02:28"
-        }
-    ]
-}
-
-
-console.log(api.setPrototype(objs,"data[0].cash_info.arr[0].name",["aawdwdaw","dwadawdwa"]));
-console.log(api.getPrototype(objs,"data[0].cash_info.arr[0].name"));
-console.log(objs)
-console.log(api.getPrototype(objs,"data[0].cash_info.arr[1].name"));
-console.log(api.setPrototype(objs,"JSON.cash_info","hahha"));
-console.log(api.getPrototype(objs,"JSON.cash_info"));
-console.log(api.getPrototype(objs,"JSON"));
-
-console.log(api.setPrototype(objs,"data[0].cash_infos.arr[0].names",["aawdwdaw","dwadawdwa"]))
-console.log(api.getPrototype(objs,"data[0].cash_infos.arr[0]"))
-
-console.time("----------------------")
-console.log(api.setPrototype(objs,"data[0].cash_info.arr[0].sname",["aawdwdaw","dwadawdwa"]))
-console.timeEnd("----------------------")
-console.time("----------------------")
-console.log(api.getPrototype(objs,"data[[[[[0]]]]]].cash_info.arr[[[[[[[0]]]]]]].name"))
-console.timeLog("----------------------")
-
-console.log(api.timeFormat(new Date()))
-console.log(api.timeFormat(new Date(), 'yyyy-mm-dd'))
-console.log(api.timeFormat(new Date().getTime(), 'yyyy-mm-dd'))
-
-
-console.log(api.randomArray([1,2,3,4,5,6,7,8,9]))
-
-console.log(api.deepMerge(obj,objs));
-
-
-let obj2 = api.deepClone(obj);
-
-console.log(obj2)
-obj2.data[0].id = 21343;
-console.log(obj.function());
-console.log(obj2)
-
-console.log(api.guid());
-
-console.log(api.colorGradient('rgb(250,250,250)', 'rgb(252,252,252)', 3));
-
-console.log(api.hexToRgb("#000"));
-
-console.log(api.rgbToHex("rgb(0,0,0)"));
-
-//返回 rgba(0,0,0,0.35)
-console.log(api.colorToRgba('#000000', 0.35));
-//返回 rgba(109,180,0,0.4)
-console.log(api.colorToRgba('rgb(109, 180, 0)', 0.4));
-
-let data = {
-    name: "gavin",
-    age: 20,
-    fruits: ['apple', 'banana', 'orange']
-}
-
-//返回结果 ?name=gavin&age=20&fruits[]=apple&fruits[]=banana&fruits[]=orange
-console.log(api.objToParams(data));
-//返回结果 name=gavin&age=20&fruits[]=apple&fruits[]=banana&fruits[]=orange
-console.log(api.objToParams(data,false));
-//返回结果 name=gavin&age=20&fruits[0]=apple&fruits[1]=banana&fruits[2]=orange
-console.log(api.objToParams(data, false, "indices"));
-//返回结果 name=gavin&age=20&fruits[]=apple&fruits[]=banana&fruits[]=orange
-console.log(api.objToParams(data, false, "brackets"));
-//返回结果 name=gavin&age=20&fruits=apple&fruits=banana&fruits=orange
-console.log(api.objToParams(data, false, "repeat"));
-//返回结果 name=gavin&age=20&fruits=apple,banana,orange
-console.log(api.objToParams(data, false, "comma"));
-
-// 不传key的情况下 返回8072f1be03f75681ef28a1b16b481a43
-console.log(api.md5("123456"));
-// key的情况下 返回2fa5a2a2d2e9d68a2cfb9821e2415464
-console.log(api.md5("123456", "123456789"));
-
-// 返回结果 "a b c"
-console.log(api.trim(" a b c "));
-// 返回结果 "a b c "
-console.log(api.trim(" a b c ", "left"));
-// 返回结果 " a b c"
-console.log(api.trim(" a b c", "right"));
-// 返回结果 "abc"
-console.log(api.trim(" a b c ", "all"));
+//
+//
+//
+// let obj = {
+//     "code": "success",
+//     "message": "success",
+//     "date": new Date(),
+//     "reg": /.png/,
+//     // @ts-ignore
+//     "nulls": null,
+//     // @ts-ignore
+//     "undefined": undefined,
+//     "Object": new Object(),
+//     "JSON": {
+//         "id": 12134,
+//         "uid": 490537,
+//         "username": "🌝",
+//         "source_type": "luck_draw",
+//         "source_id": 57206,
+//         "prize_name": "22.22元现金奖励",
+//         "prize_type": "cash",
+//         "handle_status": "information_complete",
+//         "create_time": "2022-01-24 10:02:28",
+//         "update_time": "2022-01-24 10:02:28",
+//         "cash_info": {
+//             "id": 12134,
+//             "account": "18027215212",
+//             "name": "黄文俊",
+//             "cent": 22000,
+//             "create_time": "2022-01-25 17:23:59",
+//             "update_time": "2022-01-25 17:24:00"
+//         }
+//     },
+//     "function": function(){console.log("aaaaa")},
+//     "data": [
+//         {
+//             "id": 12134,
+//             "uid": 490537,
+//             "username": "🌝",
+//             "source_type": "luck_draw",
+//             "source_id": 57206,
+//             "prize_name": "22.22元现金奖励",
+//             "prize_type": "cash",
+//             "handle_status": "information_complete",
+//             "create_time": "2022-01-24 10:02:28",
+//             "update_time": "2022-01-24 10:02:28",
+//             "cash_info": {
+//                 "id": 12134,
+//                 "account": "18027215212",
+//                 "name": "黄文俊",
+//                 "cent": 22000,
+//                 "create_time": "2022-01-25 17:23:59",
+//                 "update_time": "2022-01-25 17:24:00"
+//             }
+//         },
+//         {
+//             "id": 12133,
+//             "uid": 490538,
+//             "username": "烟火里的尘埃",
+//             "source_type": "luck_draw",
+//             "source_id": 57206,
+//             "prize_name": "22.22元现金奖励",
+//             "prize_type": "cash",
+//             "handle_status": "information_complete",
+//             "create_time": "2022-01-24 10:02:28",
+//             "update_time": "2022-01-24 10:02:28"
+//         }
+//     ]
+// }
+//
+// let objs = {
+//     "code": "success",
+//     "message": "success",
+//     "date": new Date(),
+//     "reg": /.png/,
+//     // @ts-ignore
+//     "nulls": null,
+//     // @ts-ignore
+//     "undefined": undefined,
+//     "Object": new Object(),
+//     "JSON": {
+//         "id": 12134,
+//         "uid": 490537,
+//         "username": "🌝",
+//         "source_type": "luck_draw",
+//         "source_id": 57206,
+//         "prize_name": "22.22元现金奖励",
+//         "prize_type": "cash",
+//         "handle_status": "information_complete",
+//         "create_time": "2022-01-24 10:02:28",
+//         "update_time": "2022-01-24 10:02:28",
+//         "gavin": 1,
+//         "cash_info": {
+//             "gavin": 2,
+//             "id": 12134,
+//             "account": "18027215212",
+//             "name": "黄文俊",
+//             "cent": 22000,
+//             "create_time": "2022-01-25 17:23:59",
+//             "update_time": "2022-01-25 17:24:00"
+//         }
+//     },
+//     "function": function(){console.log("aaaaa")},
+//     "data": [
+//         {
+//             "id": 12134,
+//             "uid": 490537,
+//             "username": "🌝",
+//             "source_type": "luck_draw",
+//             "source_id": 57206,
+//             "prize_name": "22.22元现金奖励",
+//             "prize_type": "cash",
+//             "handle_status": "information_complete",
+//             "create_time": "2022-01-24 10:02:28",
+//             "update_time": "2022-01-24 10:02:28",
+//             "gavin": 1,
+//
+//
+//             "cash_info": {
+//                 "gavin": 2,
+//                 "id": 12134,
+//                 "account": "18027215212",
+//                 "name": "黄文俊",
+//                 "cent": 22000,
+//                 "create_time": "2022-01-25 17:23:59",
+//                 "update_time": "2022-01-25 17:24:00",
+//                 "arr": [
+//                     {
+//                         name: "gavin",
+//                         "arr": [
+//                             {
+//                                 name: "gavin",
+//                             },
+//                             {
+//                                 name: "yami"
+//                             }
+//                         ],
+//                     },
+//                     {
+//                         name: "yami",
+//                         "arr": [
+//                             {
+//                                 name: "gavin",
+//                             },
+//                             {
+//                                 name: "yami"
+//                             }
+//                         ],
+//                     }
+//                 ],
+//             },
+//         },
+//         {
+//             "id": 12133,
+//             "uid": 490538,
+//             "username": "烟火里的尘埃",
+//             "source_type": "luck_draw",
+//             "source_id": 57206,
+//             "prize_name": "22.22元现金奖励",
+//             "prize_type": "cash",
+//             "handle_status": "information_complete",
+//             "create_time": "2022-01-24 10:02:28",
+//             "update_time": "2022-01-24 10:02:28"
+//         }
+//     ]
+// }
+//
+//
+// console.log(api.setPrototype(objs,"data[0].cash_info.arr[0].name",["aawdwdaw","dwadawdwa"]));
+// console.log(api.getPrototype(objs,"data[0].cash_info.arr[0].name"));
+// console.log(objs)
+// console.log(api.getPrototype(objs,"data[0].cash_info.arr[1].name"));
+// console.log(api.setPrototype(objs,"JSON.cash_info","hahha"));
+// console.log(api.getPrototype(objs,"JSON.cash_info"));
+// console.log(api.getPrototype(objs,"JSON"));
+//
+// console.log(api.setPrototype(objs,"data[0].cash_infos.arr[0].names",["aawdwdaw","dwadawdwa"]))
+// console.log(api.getPrototype(objs,"data[0].cash_infos.arr[0]"))
+//
+// console.time("----------------------")
+// console.log(api.setPrototype(objs,"data[0].cash_info.arr[0].sname",["aawdwdaw","dwadawdwa"]))
+// console.timeEnd("----------------------")
+// console.time("----------------------")
+// console.log(api.getPrototype(objs,"data[[[[[0]]]]]].cash_info.arr[[[[[[[0]]]]]]].name"))
+// console.timeLog("----------------------")
+//
+// console.log(api.timeFormat(new Date()))
+// console.log(api.timeFormat(new Date(), 'yyyy-mm-dd'))
+// console.log(api.timeFormat(new Date().getTime(), 'yyyy-mm-dd'))
+//
+//
+// console.log(api.randomArray([1,2,3,4,5,6,7,8,9]))
+//
+// console.log(api.deepMerge(obj,objs));
+//
+//
+// let obj2 = api.deepClone(obj);
+//
+// console.log(obj2)
+// obj2.data[0].id = 21343;
+// console.log(obj.function());
+// console.log(obj2)
+//
+// console.log(api.guid());
+//
+// console.log(api.colorGradient('rgb(250,250,250)', 'rgb(252,252,252)', 3));
+//
+// console.log(api.hexToRgb("#000"));
+//
+// console.log(api.rgbToHex("rgb(0,0,0)"));
+//
+// //返回 rgba(0,0,0,0.35)
+// console.log(api.colorToRgba('#000000', 0.35));
+// //返回 rgba(109,180,0,0.4)
+// console.log(api.colorToRgba('rgb(109, 180, 0)', 0.4));
+//
+// let data = {
+//     name: "gavin",
+//     age: 20,
+//     fruits: ['apple', 'banana', 'orange']
+// }
+//
+// //返回结果 ?name=gavin&age=20&fruits[]=apple&fruits[]=banana&fruits[]=orange
+// console.log(api.objToParams(data));
+// //返回结果 name=gavin&age=20&fruits[]=apple&fruits[]=banana&fruits[]=orange
+// console.log(api.objToParams(data,false));
+// //返回结果 name=gavin&age=20&fruits[0]=apple&fruits[1]=banana&fruits[2]=orange
+// console.log(api.objToParams(data, false, "indices"));
+// //返回结果 name=gavin&age=20&fruits[]=apple&fruits[]=banana&fruits[]=orange
+// console.log(api.objToParams(data, false, "brackets"));
+// //返回结果 name=gavin&age=20&fruits=apple&fruits=banana&fruits=orange
+// console.log(api.objToParams(data, false, "repeat"));
+// //返回结果 name=gavin&age=20&fruits=apple,banana,orange
+// console.log(api.objToParams(data, false, "comma"));
+//
+// // 不传key的情况下 返回8072f1be03f75681ef28a1b16b481a43
+// console.log(api.md5("123456"));
+// // key的情况下 返回2fa5a2a2d2e9d68a2cfb9821e2415464
+// console.log(api.md5("123456", "123456789"));
+//
+// // 返回结果 "a b c"
+// console.log(api.trim(" a b c "));
+// // 返回结果 "a b c "
+// console.log(api.trim(" a b c ", "left"));
+// // 返回结果 " a b c"
+// console.log(api.trim(" a b c", "right"));
+// // 返回结果 "abc"
+// console.log(api.trim(" a b c ", "all"));
 
 // console.log(api.isCode(123456));    // 不传验证码长度，不填默认为6位数 返回true
 // console.log(api.isCode(123456, 6));    // true
@@ -555,4 +555,34 @@ console.log(api.trim(" a b c ", "all"));
 // console.log(api.isRegExp(new RegExp("")));    //true
 // console.log(api.isRegExp("//"));     //false;
 
+// 检测到 ”男装“ 广告敏感词，返回true
+console.log(api.isSensitive("这男装很便宜"));
 
+// 返回 ['男装'] 广告敏感词
+console.log(api.sensitiveSearch("这男装很便宜"));
+
+// 返回 ”这**很便宜“
+console.log(api.sensitiveReplace("这男装很便宜"));
+// 返回 ”这男装很便宜“
+console.log(api.sensitiveReplace("这男装很便宜", ["男装"]));
+
+console.log(api.sensitiveAdd(["成功","中华民族伟"]));      // 返回 true
+console.log(api.sensitiveAdd({"阳光":"阳光","yyds": "yyds"}));      // 返回 true
+console.log(api.sensitiveAdd(1314));      // 返回 true
+console.log(api.sensitiveAdd("中国"));      // 返回 true
+console.log(api.sensitiveAdd("国家|不仅|利于"));      // 返回 true
+// 返回 ['开放', '成功', '中华民族伟', '阳光', 'yyds', '中国', '国家', '不仅', '利于']
+console.log(api.sensitiveSearch("成功举办北京冬奥会、冬残奥会，不仅可以增强我们实现中华民族伟大复兴的信心，而且有利于展示我们国家和民族致力于推动构建人类命运共同体，阳光、富强、开放的良好形象，增进各国人民对中国的了解和认识。yyds"));
+// 返回 **举办北京冬奥会、冬残奥会，**可以增强我们实现*****大复兴的信心，而且有**展示我们**和民族致力于推动构建人类命运共同体，**、富强、**的良好形象，增进各国人民对**的了解和认识。****
+console.log(api.sensitiveReplace("成功举办北京冬奥会、冬残奥会，不仅可以增强我们实现中华民族伟大复兴的信心，而且有利于展示我们国家和民族致力于推动构建人类命运共同体，阳光、富强、开放的良好形象，增进各国人民对中国的了解和认识。yyds"));
+
+
+console.log(api.sensitiveFilter(["成功","中华民族伟"]));     // 返回 true
+console.log(api.sensitiveFilter({"阳光":"阳光","yyds": "yyds"}));     // 返回 true
+console.log(api.sensitiveFilter(1314));     // 返回 true
+console.log(api.sensitiveFilter("中国"));     // 返回 true
+console.log(api.sensitiveFilter("国家|不仅|利于"));     // 返回 true
+// 返回 ['开放']
+console.log(api.sensitiveSearch("成功举办北京冬奥会、冬残奥会，不仅可以增强我们实现中华民族伟大复兴的信心，而且有利于展示我们国家和民族致力于推动构建人类命运共同体，阳光、富强、开放的良好形象，增进各国人民对中国的了解和认识。yyds"));
+// 成功举办北京冬奥会、冬残奥会，不仅可以增强我们实现中华民族伟大复兴的信心，而且有利于展示我们国家和民族致力于推动构建人类命运共同体，阳光、富强、**的良好形象，增进各国人民对中国的了解和认识。yyds
+console.log(api.sensitiveReplace("成功举办北京冬奥会、冬残奥会，不仅可以增强我们实现中华民族伟大复兴的信心，而且有利于展示我们国家和民族致力于推动构建人类命运共同体，阳光、富强、开放的良好形象，增进各国人民对中国的了解和认识。yyds"));

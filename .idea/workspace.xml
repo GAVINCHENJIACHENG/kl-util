@@ -10,18 +10,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12b1de44-edbe-4f80-b323-ebfd56c83b5c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Model/Model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/README.md" afterDir="false" />
+    <list default="true" id="12b1de44-edbe-4f80-b323-ebfd56c83b5c" name="Default Changelist" comment="gavin-1.0.1.20220212-新增单例设计模式">
+      <change afterPath="$PROJECT_DIR$/src/api/Sensitive/Sensitive.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/Sensitive/key.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/Debounce/Debounce.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/Debounce/Debounce.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/DeepClone/DeepClone.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/DeepClone/DeepClone.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/DeepMerge/DeepMerge.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/DeepMerge/DeepMerge.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/Throttle/Throttle.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/Throttle/Throttle.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +47,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="VAR" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/model" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/api/Sensitive" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -63,11 +59,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\kl\其他项目\kl-util\src\api\Sensitive" />
       <recent name="D:\kl\其他项目\kl-util\src\model" />
       <recent name="D:\project\kl-util\src\api" />
       <recent name="D:\project\kl-util\src\structure" />
       <recent name="D:\project\kl-util\src\structure\DoublyLinkedList" />
-      <recent name="D:\project\kl-util\src\structure\LinkedList" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\project\kl-util\src" />
@@ -103,7 +99,8 @@
       <workItem from="1644546150414" duration="2271000" />
       <workItem from="1644560355087" duration="12969000" />
       <workItem from="1644591745177" duration="2730000" />
-      <workItem from="1644623873561" duration="6069000" />
+      <workItem from="1644623873561" duration="16714000" />
+      <workItem from="1644657945248" duration="7829000" />
     </task>
     <task id="LOCAL-00001" summary="gavin-1.0.0.20220102-新增队列">
       <created>1642670895901</created>
@@ -238,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644487928715</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="gavin-1.0.1.20220212-新增单例设计模式">
+      <created>1644630014916</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1644630014916</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,6 +258,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="gavin-1.0.0.20220102-新增队列" />
@@ -262,7 +267,8 @@
     <MESSAGE value="gavin-1.0.0.20220125-新增双向链表" />
     <MESSAGE value="gavin-1.0.0.20220208" />
     <MESSAGE value="gavin-1.0.0.20220210" />
-    <option name="LAST_COMMIT_MESSAGE" value="gavin-1.0.0.20220210" />
+    <MESSAGE value="gavin-1.0.1.20220212-新增单例设计模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="gavin-1.0.1.20220212-新增单例设计模式" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="363" key="#Inspections" timestamp="1644567826065">
@@ -273,18 +279,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="791" y="86" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1644487926458" />
-    <state x="627" y="259" key="Vcs.Push.Dialog.v2" timestamp="1644487930331">
+    <state x="627" y="259" key="Vcs.Push.Dialog.v2" timestamp="1644630079648">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="627" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1644487930331" />
-    <state x="181" y="260" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1644626639674">
+    <state x="627" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1644630079648" />
+    <state x="181" y="260" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1644632010030">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="181" y="260" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1644626639674" />
-    <state x="358" y="178" width="1477" height="731" key="dock-window-1" timestamp="1644560375267">
+    <state x="181" y="260" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1644632010030" />
+    <state x="391" y="179" width="1418" height="698" maximized="true" key="dock-window-1" timestamp="1644666406830">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="358" y="178" width="1477" height="731" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1644560375267" />
+    <state x="391" y="179" width="1418" height="698" maximized="true" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1644666406830" />
     <state x="0" y="2" width="639" height="726" key="dock-window-2" timestamp="1644458403694">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -297,9 +303,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1400" y="392" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1644387483763" />
-    <state x="974" y="311" width="672" height="678" key="search.everywhere.popup" timestamp="1644391296528">
+    <state x="974" y="311" width="672" height="678" key="search.everywhere.popup" timestamp="1644664388701">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="974" y="311" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1644391296528" />
+    <state x="974" y="311" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1644664388701" />
   </component>
 </project>
