@@ -99,14 +99,14 @@ import {Stack,Utils,Queue,LinkedList,DoublyLinkedList,Api} from "./index";
 // console.log(util.baseConverter(100));
 
 var api = new Api();
-// api.throttle(()=>{
-//     console.log(111)
-// },2000)();
-// setTimeout(()=>{
-//     api.throttle(()=>{
-//         console.log(222)
-//     },2500)();
-// },2500)
+api.throttle(()=>{
+    console.log(111)
+},2000)();
+setTimeout(()=>{
+    api.throttle(()=>{
+        console.log(222)
+    },2500)();
+},2500)
 // api.throttle(()=>{
 //     console.log(333)
 // },2000)();
@@ -555,34 +555,34 @@ var api = new Api();
 // console.log(api.isRegExp(new RegExp("")));    //true
 // console.log(api.isRegExp("//"));     //false;
 
-// 检测到 ”男装“ 广告敏感词，返回true
-console.log(api.isSensitive("这男装很便宜"));
-
-// 返回 ['男装'] 广告敏感词
-console.log(api.sensitiveSearch("这男装很便宜"));
-
-// 返回 ”这**很便宜“
-console.log(api.sensitiveReplace("这男装很便宜"));
-// 返回 ”这男装很便宜“
-console.log(api.sensitiveReplace("这男装很便宜", ["男装"]));
-
-console.log(api.sensitiveAdd(["成功","中华民族伟"]));      // 返回 true
-console.log(api.sensitiveAdd({"阳光":"阳光","yyds": "yyds"}));      // 返回 true
-console.log(api.sensitiveAdd(1314));      // 返回 true
-console.log(api.sensitiveAdd("中国"));      // 返回 true
-console.log(api.sensitiveAdd("国家|不仅|利于"));      // 返回 true
-// 返回 ['开放', '成功', '中华民族伟', '阳光', 'yyds', '中国', '国家', '不仅', '利于']
-console.log(api.sensitiveSearch("成功举办北京冬奥会、冬残奥会，不仅可以增强我们实现中华民族伟大复兴的信心，而且有利于展示我们国家和民族致力于推动构建人类命运共同体，阳光、富强、开放的良好形象，增进各国人民对中国的了解和认识。yyds"));
-// 返回 **举办北京冬奥会、冬残奥会，**可以增强我们实现*****大复兴的信心，而且有**展示我们**和民族致力于推动构建人类命运共同体，**、富强、**的良好形象，增进各国人民对**的了解和认识。****
-console.log(api.sensitiveReplace("成功举办北京冬奥会、冬残奥会，不仅可以增强我们实现中华民族伟大复兴的信心，而且有利于展示我们国家和民族致力于推动构建人类命运共同体，阳光、富强、开放的良好形象，增进各国人民对中国的了解和认识。yyds"));
-
-
-console.log(api.sensitiveFilter(["成功","中华民族伟"]));     // 返回 true
-console.log(api.sensitiveFilter({"阳光":"阳光","yyds": "yyds"}));     // 返回 true
-console.log(api.sensitiveFilter(1314));     // 返回 true
-console.log(api.sensitiveFilter("中国"));     // 返回 true
-console.log(api.sensitiveFilter("国家|不仅|利于"));     // 返回 true
-// 返回 ['开放']
-console.log(api.sensitiveSearch("成功举办北京冬奥会、冬残奥会，不仅可以增强我们实现中华民族伟大复兴的信心，而且有利于展示我们国家和民族致力于推动构建人类命运共同体，阳光、富强、开放的良好形象，增进各国人民对中国的了解和认识。yyds"));
-// 成功举办北京冬奥会、冬残奥会，不仅可以增强我们实现中华民族伟大复兴的信心，而且有利于展示我们国家和民族致力于推动构建人类命运共同体，阳光、富强、**的良好形象，增进各国人民对中国的了解和认识。yyds
-console.log(api.sensitiveReplace("成功举办北京冬奥会、冬残奥会，不仅可以增强我们实现中华民族伟大复兴的信心，而且有利于展示我们国家和民族致力于推动构建人类命运共同体，阳光、富强、开放的良好形象，增进各国人民对中国的了解和认识。yyds"));
+// // 检测到 ”男装“ 广告敏感词，返回true
+// console.log(api.isSensitive("这男装很便宜"));
+//
+// // 返回 ['男装'] 广告敏感词
+// console.log(api.sensitiveSearch("这男装很便宜"));
+//
+// // 返回 ”这**很便宜“
+// console.log(api.sensitiveReplace("这男装很便宜"));
+// // 返回 ”这男装很便宜“
+// console.log(api.sensitiveReplace("这男装很便宜", ["男装"]));
+//
+// console.log(api.sensitiveAdd(["成功","中华民族伟"]));      // 返回 true
+// console.log(api.sensitiveAdd({"阳光":"阳光","yyds": "yyds"}));      // 返回 true
+// console.log(api.sensitiveAdd(1314));      // 返回 true
+// console.log(api.sensitiveAdd("中国"));      // 返回 true
+// console.log(api.sensitiveAdd("国家|不仅|利于"));      // 返回 true
+// // 返回 ['开放', '成功', '中华民族伟', '阳光', 'yyds', '中国', '国家', '不仅', '利于']
+// console.log(api.sensitiveSearch("成功举办北京冬奥会、冬残奥会，不仅可以增强我们实现中华民族伟大复兴的信心，而且有利于展示我们国家和民族致力于推动构建人类命运共同体，阳光、富强、开放的良好形象，增进各国人民对中国的了解和认识。yyds"));
+// // 返回 **举办北京冬奥会、冬残奥会，**可以增强我们实现*****大复兴的信心，而且有**展示我们**和民族致力于推动构建人类命运共同体，**、富强、**的良好形象，增进各国人民对**的了解和认识。****
+// console.log(api.sensitiveReplace("成功举办北京冬奥会、冬残奥会，不仅可以增强我们实现中华民族伟大复兴的信心，而且有利于展示我们国家和民族致力于推动构建人类命运共同体，阳光、富强、开放的良好形象，增进各国人民对中国的了解和认识。yyds"));
+//
+//
+// console.log(api.sensitiveFilter(["成功","中华民族伟"]));     // 返回 true
+// console.log(api.sensitiveFilter({"阳光":"阳光","yyds": "yyds"}));     // 返回 true
+// console.log(api.sensitiveFilter(1314));     // 返回 true
+// console.log(api.sensitiveFilter("中国"));     // 返回 true
+// console.log(api.sensitiveFilter("国家|不仅|利于"));     // 返回 true
+// // 返回 ['开放']
+// console.log(api.sensitiveSearch("成功举办北京冬奥会、冬残奥会，不仅可以增强我们实现中华民族伟大复兴的信心，而且有利于展示我们国家和民族致力于推动构建人类命运共同体，阳光、富强、开放的良好形象，增进各国人民对中国的了解和认识。yyds"));
+// // 成功举办北京冬奥会、冬残奥会，不仅可以增强我们实现中华民族伟大复兴的信心，而且有利于展示我们国家和民族致力于推动构建人类命运共同体，阳光、富强、**的良好形象，增进各国人民对中国的了解和认识。yyds
+// console.log(api.sensitiveReplace("成功举办北京冬奥会、冬残奥会，不仅可以增强我们实现中华民族伟大复兴的信心，而且有利于展示我们国家和民族致力于推动构建人类命运共同体，阳光、富强、开放的良好形象，增进各国人民对中国的了解和认识。yyds"));
