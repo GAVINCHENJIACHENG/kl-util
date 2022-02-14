@@ -3,6 +3,7 @@ module.exports = function Model () {
     //已创建的实例
     var instances = {};
 
+
     /**
      * 单例模式（开放至APi接口）
      * @param e 实例对象
