@@ -11,7 +11,7 @@ module.exports = function Model () {
      * @param is 是否开启单例模式，默认已开启
      */
     Model.prototype.singleton = function (e: any, key: string,is = true){
-        return this.singleton({obj: e,name: key},is);
+        return this.singletonModel({obj: e,name: key},is);
     }
 
     /**
