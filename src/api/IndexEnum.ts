@@ -1,41 +1,41 @@
 module.exports = {
-    Throttle: {
+    THROTTLE: {
         name: "Throttle",
         obj: require("./Throttle/Throttle")
     },
-    Debounce: {
+    DEBOUNCE: {
         name: "Debounce",
         obj: require("./Debounce/Debounce")
     },
-    DeepClone: {
+    DEEPCLONE: {
         name: "DeepClone",
         obj: require("./DeepClone/DeepClone")
     },
-    DeepMerge: {
+    DEEPMERGE: {
         name: "DeepMerge",
         obj: require("./DeepMerge/DeepMerge")
     },
-    Prototype: {
+    PROTOTYPE: {
         name: "Prototype",
         obj: require("./Prototype/Prototype")
     },
-    Time: {
+    TIME: {
         name: "Time",
         obj: require("./Time/Time")
     },
-    Array: {
+    ARRAY: {
         name: "Array",
         obj: require("./Array/Array")
     },
-    Guid: {
+    GUID: {
         name: "Guid",
         obj: require("./Guid/Guid")
     },
-    Color: {
+    COLOR: {
         name: "Color",
         obj: require("./Color/Color")
     },
-    Params: {
+    PARAMS: {
         name: "Params",
         obj: require("./Params/Params")
     },
@@ -43,15 +43,15 @@ module.exports = {
         name: "MD5",
         obj: require("./MD5/MD5")
     },
-    Trim: {
+    TRIM: {
         name: "Trim",
         obj: require("./Trim/Trim")
     },
-    Test: {
+    TEST: {
         name: "Test",
         obj: require("./Test/Test")
     },
-    Sensitive: {
+    SENSITIVE: {
         name: "Sensitive",
         obj: require("./Sensitive/Sensitive")
     },
