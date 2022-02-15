@@ -30,7 +30,7 @@ module.exports = function Api() {
         return singleton(index.Time).timeFormat(dateTime, fmt);
     };
     Api.prototype.randomArray = function (array: Array<any>) {
-        return singleton(index.ArrayObj).randomArray(array);
+        return singleton(index.Array).randomArray(array);
     };
     Api.prototype.guid = function (len: number, firstU:boolean, radix: number) {
         return singleton(index.Guid).get(len,firstU,radix);
