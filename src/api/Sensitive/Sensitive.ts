@@ -2,9 +2,9 @@ var key = require("./key.txt")
 var Test = require("../Test/Test");
 
 module.exports = function Sensitive() {
-    var test = new Test();
+    let test = new Test();
     // 敏感词
-    var wordArray = key.split("|");
+    let wordArray: Array<number | string> = key.split("|");
 
     /**
      * 敏感词检测
@@ -18,11 +18,11 @@ module.exports = function Sensitive() {
      * 敏感词搜索
      * @param str 需要检测的字符串
      */
-    Sensitive.prototype.sensitiveSearch = function (str: string): Array<string>{
-        if(!str)return;
-        var values = [];
-        for(var i=0;i<wordArray.length;i++) {
-            if(str.indexOf(wordArray[i]) !== -1){
+    Sensitive.prototype.sensitiveSearch = function (str: string): Array<string | number> {
+        if(!str)return [];
+        let values: Array<string | number> = [];
+        for(let i=0;i<wordArray.length;i++) {
+            if(str.indexOf(wordArray[i] as string) !== -1){
                 values.push(wordArray[i]);
             }
         }
@@ -34,20 +34,19 @@ module.exports = function Sensitive() {
      * @param str 需要检测的字符串
      * @param filter 不替换以下敏感词
      */
-    // @ts-ignore
-    Sensitive.prototype.sensitiveReplace = function (str: string, filter= []){
-        var key = this.sensitiveSearch(str);
+    Sensitive.prototype.sensitiveReplace = function (str: string, filter= []): string{
+        var key: string[] = this.sensitiveSearch(str);
         if(!key)return str;
-        for(var i=0;i<key.length;i++){
-            for(var j=0;j<filter.length;j++){
+        for(let i=0;i<key.length;i++){
+            for(let j=0;j<filter.length;j++){
                 if(key[i] === filter[j]){
-                    key.splice(key[i],1)
+                    key.splice(i,1)
                 }
             }
             if(key.length === 0)return str;
             //根据字符数量来替换成*
-            var rep = "";
-            for(var j=0;j<key[i].length;j++){
+            let rep: string = "";
+            for(let j=0;j<key[i].length;j++){
                 rep += "*";
             }
             str = str.replace(key[i],rep);
@@ -64,21 +63,20 @@ module.exports = function Sensitive() {
      *
      * @param key 敏感词对象，支持多种格式，比如：Array，Object，String，Number
      */
-    Sensitive.prototype.sensitiveFilter = function (key: (Array<any> | object | string | number | any)): boolean{
+    Sensitive.prototype.sensitiveFilter = function (key: string[] | object | string | number ): boolean{
         if(test.array(key)){
-            for(let i=0;i<key.length;i++){
-                this.sensitiveFilter(key[i]);
+            for(let i=0;i<(key as Array<string>).length;i++){
+                this.sensitiveFilter((key as Array<string>)[i]);
             }
             return true;
         } else if (test.object(key)) {
-            for(let i in key){
-                this.sensitiveFilter(key[i]);
+            for(let i in (<object>key)){
+                this.sensitiveFilter((key as any)[i]);
             }
             return true;
         } else if (test.number(key)||Object.prototype.toString.call(key) === "[object String]"){
-            if(Object.prototype.toString.call(key) === "[object String]" && key.indexOf("|") !== -1){
-                // @ts-ignore
-                key = key.split("|");
+            if(Object.prototype.toString.call(key) === "[object String]" && (<string>key).indexOf("|") !== -1){
+                key = (<string>key).split("|");
                 return this.sensitiveFilter(key);
             }else{
                 for(let j=0;j<wordArray.length;j++){
@@ -100,24 +98,23 @@ module.exports = function Sensitive() {
      *
      * @param key 敏感词对象，支持多种格式，比如：Array，Object，String，Number
      */
-    Sensitive.prototype.sensitiveAdd = function (key: (Array<any> | object | string | number | any)): boolean{
+    Sensitive.prototype.sensitiveAdd = function (key:  Array<string> | object | string | number ): boolean{
         if(test.array(key)){
-            for(let i=0;i<key.length;i++){
-                wordArray.push(key[i])
+            for(let i=0;i<(key as Array<string>).length;i++){
+                wordArray.push((key as  Array<string>)[i])
             }
             return true;
         } else if (test.object(key)) {
-            for(let k in key){
-                wordArray.push(key[k])
+            for(let k in (<object>key)){
+                wordArray.push((key as any)[k])
             }
             return true;
         } else if (test.number(key)||Object.prototype.toString.call(key) === "[object String]"){
-            if(Object.prototype.toString.call(key) === "[object String]" && key.indexOf("|") !== -1){
-                // @ts-ignore
-                key = key.split("|");
+            if(Object.prototype.toString.call(key) === "[object String]" && (<string>key).indexOf("|") !== -1){
+                key = (<string>key).split("|");
                 return this.sensitiveAdd(key);
             }else{
-                wordArray.push(key);
+                wordArray.push(<number>key);
             }
             return true;
         }

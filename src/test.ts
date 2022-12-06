@@ -1,5 +1,8 @@
 // @ts-ignore
-import {Stack,Utils,Queue,LinkedList,DoublyLinkedList,Api} from "./index";
+// import {Stack,Utils,Queue,LinkedList,DoublyLinkedList,Api} from "./index";
+
+import {Api, PubSub} from "./index";
+// import { PubSub } from "./index";
 
 // let doublyLinkedList = new DoublyLinkedList();
 // //测试push方法
@@ -586,3 +589,12 @@ setTimeout(()=>{
 // console.log(api.sensitiveSearch("成功举办北京冬奥会、冬残奥会，不仅可以增强我们实现中华民族伟大复兴的信心，而且有利于展示我们国家和民族致力于推动构建人类命运共同体，阳光、富强、开放的良好形象，增进各国人民对中国的了解和认识。yyds"));
 // // 成功举办北京冬奥会、冬残奥会，不仅可以增强我们实现中华民族伟大复兴的信心，而且有利于展示我们国家和民族致力于推动构建人类命运共同体，阳光、富强、**的良好形象，增进各国人民对中国的了解和认识。yyds
 // console.log(api.sensitiveReplace("成功举办北京冬奥会、冬残奥会，不仅可以增强我们实现中华民族伟大复兴的信心，而且有利于展示我们国家和民族致力于推动构建人类命运共同体，阳光、富强、开放的良好形象，增进各国人民对中国的了解和认识。yyds"));
+
+const pubSub = new PubSub();
+pubSub.subscriber("app", function(e: any){
+    console.log(e);
+})
+
+setTimeout(() => {
+    pubSub.publish("app", "你是世界上最棒的")
+}, 2000)

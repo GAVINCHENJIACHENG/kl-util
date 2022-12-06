@@ -66,7 +66,10 @@ module.exports = {
     optimization: {
         minimizer: [
             new CssMinimizerWebpackPlugin()
-        ]
+        ],
+        splitChunks: {
+            chunks: "all"
+        }
     },
     devServer: {
         static: {

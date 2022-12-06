@@ -19,8 +19,8 @@ module.exports = function LinkedList (){
     LinkedList.prototype.head = null;
 
     function Node (element:any){
-        this.element = element;
-        this.next = null;
+        Node.prototype.element = element;
+        Node.prototype.next = null;
     }
 
     LinkedList.prototype.Node = Node;

@@ -6,7 +6,7 @@ module.exports = function Prototype() {
      * @param obj
      * @param key
      */
-    Prototype.prototype.get = function (obj: object, key: string){
+    Prototype.prototype.get = function (obj: object, key: string | object): object | null{
         //判断key是否不为字符串或者为空数组
         if(typeof key !== 'string' || !key || typeof obj !== 'object') {
             return null;
@@ -36,10 +36,10 @@ module.exports = function Prototype() {
      * @param key
      * @param val
      */
-    Prototype.prototype.set = function(obj: object, key: string, val: string) {
+    Prototype.prototype.set = function(obj: object, key: string, val: string): boolean {
         //获取链名
-        var keys = key.split(".");
-        var turn;
+        var keys: string[] = key.split(".");
+        var turn: object;
         for(var i=0;i<keys.length;i++){
             //获取keys类型
             turn = this.turn(keys[i])
@@ -88,8 +88,8 @@ module.exports = function Prototype() {
      */
     Prototype.prototype.turn = function (key: string): object {
         if(this.is(key)){
-            var left = key.split("[");
-            var right = left[1].split("]");
+            let left: string[] = key.split("[");
+            let right: string[] = left[1].split("]");
             return {
                 name: left[0],
                 index: Number(right[0]),

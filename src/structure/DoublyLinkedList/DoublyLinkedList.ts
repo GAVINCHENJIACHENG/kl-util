@@ -21,9 +21,9 @@ function DoublyLinkedList(){
     DoublyLinkedList.prototype.tail = null;
     //内部类
     function Node(element: any){
-        this.element = element;
-        this.next = null;
-        this.prev = null;
+        Node.prototype.element = element;
+        Node.prototype.next = null;
+        Node.prototype.prev = null;
     }
 
     /**

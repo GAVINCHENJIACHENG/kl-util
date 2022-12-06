@@ -14,7 +14,7 @@ module.exports = function Time(){
         if (!dateTime) dateTime = Number(new Date())
         // 如果dateTime长度为10或者13，则为秒和毫秒的时间戳，如果超过13位，则为其他的时间格式
         if (dateTime.toString().length == 10) dateTime *= 1000
-        var date = new Date(dateTime)
+        var date: Date = new Date(dateTime)
         var ret
         var opt = {
             'y+': date.getFullYear().toString(), // 年

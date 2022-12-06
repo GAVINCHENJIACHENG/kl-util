@@ -5,7 +5,8 @@ module.exports = {
     DoublyLinkedList: require("./structure/DoublyLinkedList/DoublyLinkedList"),
     Api: require("./api/index"),
     Utils: require("./Utils/Utils"),
-    Model: require("./Model/Model")
+    Model: require("./Model/Model"),
+    PubSub: require('./PubSub/PubSub')
 }
 
 
