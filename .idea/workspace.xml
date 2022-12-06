@@ -10,37 +10,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12b1de44-edbe-4f80-b323-ebfd56c83b5c" name="Default Changelist" comment="gavin-1.0.1.20220212-优化代码可读性">
-      <change afterPath="$PROJECT_DIR$/src/PubSub/PubSub.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PubSub/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="12b1de44-edbe-4f80-b323-ebfd56c83b5c" name="Default Changelist" comment="fix: 完善发布订阅">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/dist/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/dist/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/Color/Color.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/Color/Color.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/Debounce/Debounce.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/Debounce/Debounce.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/DeepClone/DeepClone.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/DeepClone/DeepClone.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/DeepMerge/DeepMerge.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/DeepMerge/DeepMerge.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/Guid/Guid.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/Guid/Guid.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/IndexEnum.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/IndexEnum.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/MD5/MD5.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/MD5/MD5.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/Params/Params.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/Params/Params.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/Prototype/Prototype.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/Prototype/Prototype.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/Sensitive/Sensitive.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/Sensitive/Sensitive.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/Test/Test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/Test/Test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/Throttle/Throttle.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/Throttle/Throttle.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/Time/Time.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/Time/Time.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/structure/DoublyLinkedList/DoublyLinkedList.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/structure/DoublyLinkedList/DoublyLinkedList.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/structure/LinkedList/LinkedList.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/structure/LinkedList/LinkedList.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/structure/Queue/Queue.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/structure/Queue/Queue.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/structure/Stack/Stack.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/structure/Stack/Stack.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PubSub/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/PubSub/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utils/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/structure/DoublyLinkedList/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/structure/DoublyLinkedList/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/structure/LinkedList/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/structure/LinkedList/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/structure/Queue/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/structure/Queue/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/structure/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/structure/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/structure/Stack/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/structure/Stack/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +134,7 @@
       <workItem from="1651808108181" duration="669000" />
       <workItem from="1651823146569" duration="331000" />
       <workItem from="1667209345225" duration="707000" />
-      <workItem from="1670296127352" duration="4148000" />
+      <workItem from="1670296127352" duration="6746000" />
     </task>
     <task id="LOCAL-00001" summary="gavin-1.0.0.20220102-新增队列">
       <created>1642670895901</created>
@@ -302,7 +283,21 @@
       <option name="project" value="LOCAL" />
       <updated>1644910153659</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="fix: 完善发布订阅">
+      <created>1670308766629</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1670308766629</updated>
+    </task>
+    <task id="LOCAL-00023" summary="fix: 完善发布订阅">
+      <created>1670309102987</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1670309102987</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -329,7 +324,8 @@
     <MESSAGE value="gavin-1.0.0.20220210" />
     <MESSAGE value="gavin-1.0.1.20220212-新增单例设计模式" />
     <MESSAGE value="gavin-1.0.1.20220212-优化代码可读性" />
-    <option name="LAST_COMMIT_MESSAGE" value="gavin-1.0.1.20220212-优化代码可读性" />
+    <MESSAGE value="fix: 完善发布订阅" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: 完善发布订阅" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
