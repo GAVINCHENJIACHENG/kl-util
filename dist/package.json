@@ -1,6 +1,6 @@
 {
   "name": "kl-util",
-  "version": "1.0.0",
+  "version": "1.0.8",
   "description": "util",
   "main": "./src/index.js",
   "bin": "./src/index.js",
@@ -24,5 +24,5 @@
     "url": "https://github.com/GAVINCHENJIACHENG/kl-util"
   },
   "homepage": "https://github.com/GAVINCHENJIACHENG/kl-util",
-  "_from": "kl-util@1.0.0"
+  "_from": "kl-util@1.0.8"
 }

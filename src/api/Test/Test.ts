@@ -27,7 +27,7 @@ module.exports = function Test () {
     Test.prototype.jsonString = function (json: string): boolean {
         if(!Object.is(typeof json, 'string'))return false;
         try {
-            var obj: object = JSON.parse(json);
+            let obj: object = JSON.parse(json);
             if(Object.is(typeof obj , 'object') && obj){
                 return true;
             }
@@ -106,9 +106,7 @@ module.exports = function Test () {
                 if (value === 0 || isNaN(value)) return true
                 break
             case 'object':
-                // @ts-ignore
                 if (value === null || value.length === 0) return true
-                // @ts-ignore
                 for (const i in value) {
                     return false
                 }
@@ -122,7 +120,7 @@ module.exports = function Test () {
      * @param value
      * @return Boolean
      */
-    Test.prototype.date = function (value: any): boolean{
+    Test.prototype.date = function (value: string | number | Date): boolean{
         if (!value) return false
         // 判断是否数值或者字符串数值(意味着为时间戳)，转为数值，否则new Date无法识别字符串时间戳
         if (this.number(value)) value = +value;
@@ -154,9 +152,9 @@ module.exports = function Test () {
      */
     Test.prototype.carNo = function (value: string): boolean{
         // 新能源车牌
-        const xreg = /^[京津沪渝冀豫云辽黑湘皖鲁新苏浙赣鄂桂甘晋蒙陕吉闽贵粤青藏川宁琼使领A-Z]{1}[A-Z]{1}(([0-9]{5}[DF]$)|([DF][A-HJ-NP-Z0-9][0-9]{4}$))/
+        const xreg: RegExp = /^[京津沪渝冀豫云辽黑湘皖鲁新苏浙赣鄂桂甘晋蒙陕吉闽贵粤青藏川宁琼使领A-Z]{1}[A-Z]{1}(([0-9]{5}[DF]$)|([DF][A-HJ-NP-Z0-9][0-9]{4}$))/
         // 旧车牌
-        const creg = /^[京津沪渝冀豫云辽黑湘皖鲁新苏浙赣鄂桂甘晋蒙陕吉闽贵粤青藏川宁琼使领A-Z]{1}[A-Z]{1}[A-HJ-NP-Z0-9]{4}[A-HJ-NP-Z0-9挂学警港澳]{1}$/
+        const creg: RegExp = /^[京津沪渝冀豫云辽黑湘皖鲁新苏浙赣鄂桂甘晋蒙陕吉闽贵粤青藏川宁琼使领A-Z]{1}[A-Z]{1}[A-HJ-NP-Z0-9]{4}[A-HJ-NP-Z0-9挂学警港澳]{1}$/
         if (value.length === 7) {
             return creg.test(value)
         } if (value.length === 8) {
@@ -180,7 +178,7 @@ module.exports = function Test () {
      * @return Boolean
      */
     Test.prototype.chinese = function (value: string): boolean{
-        const reg = /^[\u4e00-\u9fa5]+$/gi;
+        const reg:RegExp = /^[\u4e00-\u9fa5]+$/gi;
         return reg.test(value)
     }
 
@@ -212,14 +210,14 @@ module.exports = function Test () {
     Test.prototype.contains = function (value: any, param: any, isValue: boolean): boolean{
         //判断是否为数组
         if(this.array(value)){
-            for (var i=0;i<value.length;i++){
+            for (let i=0;i<value.length;i++){
                 if(Object.is(value[i], param)){
                     return true;
                 }
             }
             return false;
         } else if (this.object(value)){
-            for (var key in value) {
+            for (let key in value) {
                 if(isValue){
                     //判断值
                     if(Object.is(value[key], param))return true;

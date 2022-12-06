@@ -10,8 +10,8 @@
  */
 module.exports = function Stack() {
 
-    this.count = 0;
-    this.items = [];
+    Stack.prototype.count = 0;
+    Stack.prototype.items = [];
 
     /**
      * 新增一个元素

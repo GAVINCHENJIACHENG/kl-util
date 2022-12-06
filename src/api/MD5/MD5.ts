@@ -166,6 +166,7 @@ function rstr2binl (input: string) {
     }
     var length8 = input.length * 8
     for (i = 0; i < length8; i += 8) {
+        // @ts-ignore
         output[i >> 5] |= (input.charCodeAt(i / 8) & 0xff) << (i % 32)
     }
     return output
@@ -192,7 +193,9 @@ function rstrHMACMD5 (key: any, data: any) {
         bkey = binlMD5(bkey, key.length * 8)
     }
     for (i = 0; i < 16; i += 1) {
+        // @ts-ignore
         ipad[i] = bkey[i] ^ 0x36363636
+        // @ts-ignore
         opad[i] = bkey[i] ^ 0x5c5c5c5c
     }
     hash = binlMD5(ipad.concat(rstr2binl(data)), 512 + data.length * 8)

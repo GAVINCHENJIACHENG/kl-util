@@ -16,16 +16,16 @@
  *
  * */
 module.exports = function Queue(){
-    this.count = 0;
-    this.items = [];
+    Queue.prototype.count = 0;
+    Queue.prototype.items = [];
 
     /**
      * 元素和优先级
      * @constructor
      */
     function QueueElement (element:any,priority:number){
-        this.element = element;
-        this.priority = priority;
+        QueueElement.prototype.element = element;
+        QueueElement.prototype.priority = priority;
     }
 
     /**

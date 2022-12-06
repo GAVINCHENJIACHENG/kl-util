@@ -5,7 +5,6 @@
  */
 module.exports = function Guid() {
     Guid.prototype.get = function (len = 32, firstU = true, radix: number): string{
-        radix = radix||null;
         const chars:Array<string> = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'.split('')
         const uuid:Array<string> = [];
         radix = radix || chars.length;

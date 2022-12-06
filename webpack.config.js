@@ -6,7 +6,7 @@ const CssMinimizerWebpackPlugin = require("css-minimizer-webpack-plugin")
 module.exports = {
     entry: {
         index: "./src/index.ts",
-        test: "./src/test.ts",
+        // test: "./src/test.ts",
     },
     output: {
         filename: "src/[name].js",
@@ -66,7 +66,10 @@ module.exports = {
     optimization: {
         minimizer: [
             new CssMinimizerWebpackPlugin()
-        ]
+        ],
+        splitChunks: {
+            chunks: "all"
+        }
     },
     devServer: {
         static: {

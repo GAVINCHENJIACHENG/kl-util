@@ -5,13 +5,12 @@ module.exports = function Params() {
      * @param isPrefix isPrefix,是否自动加上"?"
      * @param arrayFormat 规则 indices|brackets|repeat|comma
      */
-    Params.prototype.objToParams = function (data = {}, isPrefix = true, arrayFormat = 'brackets'){
-        const prefix = isPrefix ? '?' : ''
-        const _result = []
+    Params.prototype.objToParams = function (data = {}, isPrefix = true, arrayFormat = 'brackets'): string{
+        const prefix: string = isPrefix ? '?' : ''
+        const _result: string[] = []
         if (['indices', 'brackets', 'repeat', 'comma'].indexOf(arrayFormat) == -1) arrayFormat = 'brackets'
         for (const key in data) {
-            // @ts-ignore
-            const value = data[key]
+            const value: any = (<any>data)[key]
             // 去掉为空的参数
             if (['', undefined, null].indexOf(value) >= 0) {
                 continue
@@ -40,7 +39,7 @@ module.exports = function Params() {
                         break
                     case 'comma':
                         // 结果: ids=1,2,3
-                        let commaStr = ''
+                        let commaStr: string = ''
                         value.forEach((_value) => {
                             commaStr += (commaStr ? ',' : '') + _value
                         })

@@ -10,12 +10,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12b1de44-edbe-4f80-b323-ebfd56c83b5c" name="Default Changelist" comment="gavin-1.0.1.20220212-新增单例设计模式">
-      <change afterPath="$PROJECT_DIR$/src/api/IndexEnum.ts" afterDir="false" />
+    <list default="true" id="12b1de44-edbe-4f80-b323-ebfd56c83b5c" name="Default Changelist" comment="fix: 完善发布订阅">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PubSub/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/PubSub/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utils/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/structure/DoublyLinkedList/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/structure/DoublyLinkedList/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/structure/LinkedList/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/structure/LinkedList/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/structure/Queue/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/structure/Queue/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/structure/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/structure/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/structure/Stack/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/structure/Stack/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +37,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="23rnDKaNCvj3ktH68x5EdgYJPFa" />
@@ -44,8 +55,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="js.last.introduce.type" value="VAR" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/api/Sensitive" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/PubSub" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -53,24 +65,24 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/PubSub" />
+      <recent name="$PROJECT_DIR$/dist" />
+      <recent name="$PROJECT_DIR$/dist/src" />
       <recent name="D:\kl\其他项目\kl-util\src\api\Sensitive" />
       <recent name="D:\kl\其他项目\kl-util\src\model" />
-      <recent name="D:\project\kl-util\src\api" />
-      <recent name="D:\project\kl-util\src\structure" />
-      <recent name="D:\project\kl-util\src\structure\DoublyLinkedList" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="D:\project\kl-util\src" />
       <recent name="D:\project\kl-util\src\structure\Utils" />
       <recent name="D:\project\kl-util\src\structure\Stack" />
       <recent name="D:\project\kl-util\src\structure\Queue" />
-      <recent name="D:\project\kl-util\src\structure\LinkedList" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -106,6 +118,23 @@
       <workItem from="1644809994368" duration="345000" />
       <workItem from="1644810496048" duration="625000" />
       <workItem from="1644822165201" duration="3531000" />
+      <workItem from="1644977770862" duration="10399000" />
+      <workItem from="1645068097559" duration="561000" />
+      <workItem from="1645068671612" duration="13498000" />
+      <workItem from="1645164249574" duration="8238000" />
+      <workItem from="1645423835186" duration="7060000" />
+      <workItem from="1645511885021" duration="602000" />
+      <workItem from="1646231318053" duration="644000" />
+      <workItem from="1646271956226" duration="9829000" />
+      <workItem from="1646380274551" duration="13000" />
+      <workItem from="1646645568165" duration="16494000" />
+      <workItem from="1646819213992" duration="702000" />
+      <workItem from="1647138957811" duration="736000" />
+      <workItem from="1647574372889" duration="611000" />
+      <workItem from="1651808108181" duration="669000" />
+      <workItem from="1651823146569" duration="331000" />
+      <workItem from="1667209345225" duration="707000" />
+      <workItem from="1670296127352" duration="6746000" />
     </task>
     <task id="LOCAL-00001" summary="gavin-1.0.0.20220102-新增队列">
       <created>1642670895901</created>
@@ -247,7 +276,28 @@
       <option name="project" value="LOCAL" />
       <updated>1644630014916</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="gavin-1.0.1.20220212-优化代码可读性">
+      <created>1644910153659</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1644910153659</updated>
+    </task>
+    <task id="LOCAL-00022" summary="fix: 完善发布订阅">
+      <created>1670308766629</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1670308766629</updated>
+    </task>
+    <task id="LOCAL-00023" summary="fix: 完善发布订阅">
+      <created>1670309102987</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1670309102987</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,6 +323,12 @@
     <MESSAGE value="gavin-1.0.0.20220208" />
     <MESSAGE value="gavin-1.0.0.20220210" />
     <MESSAGE value="gavin-1.0.1.20220212-新增单例设计模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="gavin-1.0.1.20220212-新增单例设计模式" />
+    <MESSAGE value="gavin-1.0.1.20220212-优化代码可读性" />
+    <MESSAGE value="fix: 完善发布订阅" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: 完善发布订阅" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

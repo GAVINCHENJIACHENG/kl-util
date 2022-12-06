@@ -6,12 +6,12 @@ var valid:boolean = true;
  */
 module.exports = function Throttle() {
     Throttle.prototype.throttle = function (func: Function,wait: number){
-        return function(...args: any){
+        return (...args: any) =>{
             if(!valid){
                 return false
             }
             valid = false;
-            var _this = this;
+            let _this = this;
             setTimeout( function(){
                 func.apply(_this, args);
                 valid = true;
